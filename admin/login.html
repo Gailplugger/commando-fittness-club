@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="../assets/images/app-icon-192.png" />
+    <meta name="theme-color" content="#0b0d0e" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Commando Club" />
+    <meta name="description" content="Admin login for the Commando Fittness Club prototype." />
+    <title>Admin Login | Commando Fittness Club</title>
+    <link rel="icon" type="image/png" href="../assets/images/app-icon-192.png" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <script type="module" src="../js/data.js"></script>
+    <script type="module" src="../js/admin/login.js"></script>
+  </head>
+  <body class="admin-page admin-login-page" data-page="admin-login">
+    <main class="admin-login-shell">
+      <div class="admin-login-card">
+        <div class="brand-row">
+          <img src="../GYM%20LOGO/GYM%20LOGO.png" alt="Commando Fittness Club" />
+          <div>
+            <span class="eyebrow accent">Admin access</span>
+            <h1>Commando Fittness Club Admin</h1>
+          </div>
+        </div>
+        <p class="login-note">Sign in with the authorized gym administrator account.</p>
+        <form id="admin-login-form" novalidate>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="Admin email" autocomplete="username" required />
+          </label>
+          <label>
+            <span>Password</span>
+            <input type="password" name="password" placeholder="Password" autocomplete="current-password" required />
+          </label>
+          <button class="btn btn-primary" type="submit">Login</button>
+          <p class="status-text" id="admin-login-status" aria-live="polite">Use your Firebase admin account. Never share its password.</p>
+        </form>
+      </div>
+    </main>
+    <script defer src="../js/pwa.js"></script>
+  </body>
+</html>

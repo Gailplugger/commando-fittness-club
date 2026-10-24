@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "Commando Fittness Club",
+  "short_name": "Commando Club",
+  "description": "Fitness club information, memberships, equipment and member surveys.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b0d0e",
+  "theme_color": "#0b0d0e",
+  "icons": [
+    {
+      "src": "./assets/images/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/images/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

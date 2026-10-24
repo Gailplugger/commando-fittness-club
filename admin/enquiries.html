@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="../assets/images/app-icon-192.png" />
+    <meta name="theme-color" content="#0b0d0e" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Commando Club" />
+    <meta name="description" content="Review locally recorded demo enquiries for Commando Fittness Club." />
+    <title>Enquiries | Commando Fittness Club</title>
+    <link rel="icon" type="image/png" href="../assets/images/app-icon-192.png" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <script type="module" src="../js/data.js"></script>
+    <script type="module" src="../js/components.js"></script>
+    <script type="module" src="../js/admin/guard.js"></script>
+    <script type="module" src="../js/admin/enquiries.js"></script>
+  </head>
+  <body class="admin-page" data-page="admin-enquiries" style="visibility:hidden">
+    <header class="admin-topbar"><a class="brand-wrap" href="index.html">    <img src="../GYM%20LOGO/GYM%20LOGO.png" alt="" />Commando Fittness Club Admin</a><nav class="admin-nav" aria-label="Admin navigation"><a href="index.html">Dashboard</a><a href="machines.html">Machines</a><a href="fees.html">Fees</a><a href="notifications.html">Notifications</a><a href="surveys.html">Surveys</a><a href="responses.html">Responses</a><a href="enquiries.html" class="active">Enquiries</a></nav></header>
+    <main class="admin-shell"><section class="admin-hero"><div><span class="eyebrow accent">Legacy local data</span><h1>Enquiries</h1></div><p>Current contact submissions are emailed through Formspree and are not shown here. This page only contains enquiries saved locally by the earlier prototype.</p></section><section class="card-panel table-panel"><div class="table-wrap"><table><thead><tr><th>Name</th><th>Phone</th><th>Email</th><th>Message</th><th>Date</th><th>Status</th></tr></thead><tbody id="enquiries-table"></tbody></table></div></section></main>
+    <script defer src="../js/pwa.js"></script>
+  </body>
+</html>
